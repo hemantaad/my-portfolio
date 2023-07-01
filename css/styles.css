@@ -128,7 +128,7 @@ header {
 
 .hero-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .hero-content {
@@ -251,6 +251,20 @@ header {
   background: var(--color-secondary);
   position: absolute;
   box-shadow: 8px 8px 10px black;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-container:hover {
+  animation: rotateShadow 2.5s linear infinite;
+}
+
+@keyframes rotateShadow {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .icon-container-small {

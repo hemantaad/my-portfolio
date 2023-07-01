@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Aditya Adhikari - Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,99 +10,95 @@
       rel="stylesheet"
       a
     />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
   </head>
   <body>
-    <main class="container">
-      <header>
-        <nav class="navbar">
-          <div class="logo">
-            <h1>Aditya Adhikari</h1>
-          </div>
-          <ul class="navbar-links">
-            <li><a href="#">&lt; Services &gt;</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="social-icons">
-            <div class="icon">
-              <a href="https://twitter.com/hemz_adi" target="_blank">
-                <svg>
-                  <use xlink:href="images/sprite.svg#twitter"></use>
-                </svg>
-                <span>Twitter</span>
-              </a>
-            </div>
-            <div class="icon">
-              <a href="https://github.com/hemantaad" target="_blank">
-                <svg>
-                  <use xlink:href="images/sprite.svg#github"></use>
-                </svg>
-                <span>GitHub</span>
-              </a>
-            </div>
-            <div class="icon-envelope">
-              <svg>
-                <use xlink:href="images/sprite.svg#envelope-regular"></use>
+    <main>
+      <nav class="nav">
+        <h2 class="logo">Aditya Adhikari</h2>
+        <ul class="nav__links">
+          <li>&lt; Services &gt;</li>
+          <li>Projects</li>
+          <li>About Me</li>
+          <li>Contacts</li>
+        </ul>
+        <ul class="nav__socials">
+          <div class="nav__social-link">
+            <a href="https://twitter.com/hemz_adi" target="_blank">
+              <svg class="nav__icon">
+                <use xlink:href="images/icons/sprite.svg#twitter"></use>
               </svg>
+              Twitter
+            </a>
+          </div>
+          <div class="nav__social-link">
+            <a href="https://github.com/hemantaad" target="_blank">
+              <svg class="nav__icon">
+                <use xlink:href="images/icons/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+          <div class="contact-icon">
+            <svg class="nav__icon">
+              <use xlink:href="images/icons/sprite.svg#envelope-regular"></use>
+            </svg>
+          </div>
+        </ul>
+      </nav>
+      <section class="block">
+        <div class="container">
+          <div class="hero__content">
+            <h1>
+              BACKEND<br />
+              DEVELOPER
+            </h1>
+            <h2>
+              Codes speak louder than words<br />
+              Let my creation be the testament.
+            </h2>
+            <p>
+              As a developer, I combine the elegance of classic aesthetics with
+              <br />cutting-edge technology to build impactful digital
+              experiences.
+            </p>
+            <button>Contact Me</button>
+            <div class="hero__footer">
+              <h1>2</h1>
+              <p>Years of<br />experience</p>
+              <h1>1</h1>
+              <p>
+                Worked across<br />
+                various companies
+              </p>
             </div>
           </div>
-        </nav>
-      </header>
-
-      <div class="hero-section">
-        <div class="hero-content">
-          <h1>
-            BACKEND<br />
-            DEVELOPER
-          </h1>
-          <h2>
-            Codes speak louder than words<br />
-            Let my creation be the testament.
-          </h2>
-          <p>
-            As a developer, I combine the elegance of classic aesthetics with
-            <br />cutting-edge technology to build impactful digital
-            experiences.
-          </p>
-          <button>Contact Me</button>
-          <div class="hero-footer">
-            <h1>2</h1>
-            <p>Years of<br />experience</p>
-            <h1>1</h1>
-            <p>
-              Worked across<br />
-              various companies
-            </p>
+          <div class="hero__image">
+            <span class="icon-container icon-container-rotate container-react">
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#react"></use>
+              </svg>
+            </span>
+            <span class="icon-container icon-container-rotate container-python">
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#python"></use>
+              </svg>
+            </span>
+            <span
+              class="icon-container icon-container-small icon-container-rotate container-node"
+            >
+              <svg>
+                <use xlink:href="images/icons/sprite.svg#node-js"></use>
+              </svg>
+            </span>
+            <div class="circle">
+              <img src="images/hero.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="hero-image">
-          <span class="icon-container container-react">
-            <svg>
-              <use xlink:href="images/sprite.svg#react"></use>
-            </svg>
-          </span>
-          <span class="icon-container container-python">
-            <svg>
-              <use xlink:href="images/sprite.svg#python"></use>
-            </svg>
-          </span>
-          <span class="icon-container icon-container-small container-node">
-            <svg>
-              <use xlink:href="images/sprite.svg#node-js"></use>
-            </svg>
-          </span>
-          <span class="icon-container container-blank"></span>
-          <div class="circle"></div>
-          <img src="images/hero.png" alt="" />
-        </div>
-      </div>
-
-      <footer>
-        <!-- Footer content goes here -->
-      </footer>
+      </section>
     </main>
   </body>
 </html>

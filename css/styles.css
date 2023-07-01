@@ -84,9 +84,15 @@ header {
 }
 
 .icon {
-  align-items: center;
-  display: flex;
   margin: 0 50px 0 0;
+}
+
+.icon a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
 }
 
 .icon svg {
@@ -103,8 +109,21 @@ header {
   width: 35px;
 }
 
-.icon-name {
-  font-size: 30px;
+.navbar-links li > a:hover,
+.icon :hover {
+  color: var(--color-headings);
+  fill: var(--color-headings);
+  transition: 0.5s;
+}
+
+.navbar-links li:first-child a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.icon-envelope svg:hover {
+  fill: #fff;
+  transition: 0.5s;
 }
 
 .hero-section {
@@ -148,6 +167,13 @@ header {
   margin-bottom: 120px;
 }
 
+.hero-content button:hover {
+  color: var(--color-primary);
+  background: var(--color-headings);
+  border: 2.5px solid var(--color-headings);
+  transition: 0.5s;
+}
+
 .hero-footer {
   align-items: center;
   display: inline-flex;
@@ -186,9 +212,21 @@ header {
   width: 10rem;
 }
 
+.icon-container svg:hover {
+  fill: var(--color-headings);
+  height: 12rem;
+  width: 12rem;
+  transition: 0.5s;
+}
+
 .icon-container-small svg {
   height: 8rem;
   width: 8rem;
+}
+
+.icon-container-small svg:hover {
+  height: 10rem;
+  width: 10rem;
 }
 
 .circle {

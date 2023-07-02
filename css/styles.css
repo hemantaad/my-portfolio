@@ -71,6 +71,7 @@ h6 {
 .container {
   margin: 0 auto;
   display: grid;
+  gap: 3rem 3rem;
   background: var(--color-primary);
 }
 
@@ -88,7 +89,7 @@ h6 {
 
 .hero__content > h1 {
   color: var(--color-headings);
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.1;
   font-weight: normal;
   margin: 3rem 0 0 0;
@@ -96,7 +97,7 @@ h6 {
 
 .hero__content > h2 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: normal;
   line-height: 1.1;
@@ -267,7 +268,12 @@ h6 {
     text-align: start;
   }
 
+  .hero__content > h1 {
+    font-size: 5rem;
+  }
+
   .hero__content > h2 {
+    font-size: 3rem;
     margin-top: 2rem;
   }
 

@@ -52,17 +52,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.nav {
-  align-items: center;
-  background: var(--color-primary);
-  color: var(--color-body);
-  display: flex;
-  height: 8rem;
-  justify-content: space-between;
-  padding: 0 11rem;
-  overflow: hidden;
-}
-
 .block {
   padding: 0 6rem;
   background: var(--color-primary);
@@ -307,6 +296,19 @@ h6 {
 
 /* Navbar */
 
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-primary);
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+
 .logo {
   font-size: 2.6rem;
   font-weight: normal;
@@ -314,62 +316,110 @@ h6 {
   font-family: "Bebas Neue";
 }
 
-.nav__links,
-.nav__socials {
+.navbar {
   display: flex;
-  align-items: center;
-  font-family: "Roboto Flex";
 }
 
-.nav__social-link {
-  margin: 0 1rem;
-}
-
-.nav__social-link a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--color-body);
-}
-
-.nav__links li,
-.nav__social-link a {
+.navbar li {
   list-style: none;
+}
+
+.navbar li a {
+  font-family: "Roboto Flex";
   font-size: 1.6rem;
-  margin-right: 1rem;
+  color: var(--color-body);
+  text-decoration: none;
+  margin: 0 3rem;
+  transition: all 0.5s ease;
 }
 
-.nav__links li {
-  padding: 0 3rem;
-}
-
-.nav__links li:hover,
-.nav__social-link a:hover,
-.nav__icon:hover,
-.contact-icon svg:hover {
+.navbar a:hover {
   color: var(--color-headings);
-  fill: var(--color-headings);
-  transition: 0.5s;
-  cursor: pointer;
 }
 
-.nav__social-link:hover {
-  fill: var(--color-headings);
+.navbar a.active {
+  color: var(--color-headings);
+}
+
+.navbar a.active:hover {
+  color: var(--color-body);
 }
 
 .nav__icon {
   height: 1.6rem;
   width: 1.6rem;
   fill: var(--color-body);
-  margin: 0 1rem;
 }
 
-.nav__links li:first-child {
+.nav__socials {
+  display: flex;
+  align-items: center;
+}
+
+.nav__socials a {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+  color: var(--color-body);
+  font-size: 1.6rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-family: "Roboto Flex";
+}
+
+.nav__socials a:nth-child(3) {
+  margin-right: 0;
+}
+
+.nav__socials svg {
+  margin-right: 1rem;
+}
+
+.nav__socials a:hover {
   color: var(--color-headings);
 }
 
-.nav__links li:first-child:hover {
-  color: #fff;
-  transition: 0.5s;
+.hamburger {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-body);
   cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1290px) {
+  header {
+    padding: 28px 2%;
+    transition: 0.2s;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .nav__socials {
+    display: none;
+  }
+  .navbar {
+    align-self: center;
+    /* top: 100%;
+    right: 2%;
+    width: 270px;
+    height: 29vh;
+    background: #ffd700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    z-index: 10; */
+  }
+
+  .navbar li a {
+    margin: 0 1rem;
+    align-items: center;
+  }
 }

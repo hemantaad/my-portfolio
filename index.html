@@ -17,33 +17,51 @@
   <body>
     <main>
       <header>
-        <h2 class="logo">Aditya Adhikari</h2>
-        <ul class="navbar">
-          <li><a href="#" class="active">&lt; Services &gt;</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-        <div class="nav__socials">
-          <a href="https://twitter.com/hemz_adi" target="_blank">
-            <svg class="nav__icon">
-              <use xlink:href="images/icons/sprite.svg#twitter"></use>
-            </svg>
-            Twitter
-          </a>
-          <a href="https://github.com/hemantaad" target="_blank">
-            <svg class="nav__icon">
-              <use xlink:href="images/icons/sprite.svg#github"></use>
-            </svg>
-            GitHub
-          </a>
-          <a href="https://github.com/hemantaad" target="_blank">
-            <svg class="nav__icon">
-              <use xlink:href="images/icons/sprite.svg#envelope-regular"></use>
-            </svg>
-          </a>
-          <img class="hamburger" src="images/icons/bars-solid.svg" alt="" />
-        </div>
+        <nav class="navbar collapsible">
+          <div class="nav__headers">
+            <h2 class="logo">Aditya Adhikari</h2>
+            <div class="mobile-toggler">
+              <svg
+                class="mobile-toggler"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="nav__links collapsible__content">
+            <ul>
+              <li><a href="#" class="active">&lt; Services &gt;</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="nav__socials collapsible__content">
+            <a href="https://twitter.com/hemz_adi" target="_blank">
+              <svg class="nav__icon">
+                <use xlink:href="images/icons/sprite.svg#twitter"></use>
+              </svg>
+              <span class="nav__text">Twitter</span>
+            </a>
+            <a href="https://github.com/hemantaad" target="_blank">
+              <svg class="nav__icon">
+                <use xlink:href="images/icons/sprite.svg#github"></use>
+              </svg>
+              <span class="nav__text">Github</span>
+            </a>
+            <a href="#" target="_blank">
+              <svg class="nav__icon">
+                <use
+                  xlink:href="images/icons/sprite.svg#envelope-regular"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
       </header>
       <section class="block">
         <div class="container">
@@ -97,6 +115,6 @@
         </div>
       </section>
     </main>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -476,7 +476,7 @@ header {
 /* Service */
 
 .service {
-  margin: 0 auto;
+  margin: 3rem auto 6rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -559,9 +559,5 @@ header {
 @media screen and (max-width: 768px) {
   .service__content {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .service__header h2 {
-    margin-top: 3rem;
   }
 }

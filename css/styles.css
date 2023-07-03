@@ -242,12 +242,12 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .block {
+    height: calc(100vh - 100px);
     padding-top: 6rem;
   }
 
   .container {
     grid-template-columns: repeat(2, 1fr);
-    /* height: calc(100vh - 100px); */
     max-width: 1140px;
   }
 

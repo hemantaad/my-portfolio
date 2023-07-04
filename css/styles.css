@@ -744,6 +744,64 @@ header {
   }
 }
 
+/* Contact Us */
+
+.contact {
+  padding-right: 10rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: #c5b3b3;
+}
+
+.contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  width: 70%;
+  background: #352121;
+}
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__info {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto Flex";
+  font-size: 1.4rem;
+  color: var(--color-body);
+  background: #00835e;
+  position: absolute;
+  width: 40%;
+  left: -20%;
+}
+
+.contact__info-header {
+  font-family: "Bebas Neue";
+  font-size: 3rem;
+  font-weight: normal;
+  color: var(--color-headings);
+  margin-bottom: 3rem;
+}
+
+.contact__info-body {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact__info-body svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
+
 /* Top Arrow */
 
 .top-arrow {
@@ -757,7 +815,6 @@ header {
   width: 5rem;
 }
 
-/* Show the arrow when user scrolls */
 .top-arrow.show {
   opacity: 1;
   display: flex;

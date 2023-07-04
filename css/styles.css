@@ -739,3 +739,37 @@ header {
     width: 30%;
   }
 }
+
+/* Top Arrow */
+
+.top-arrow {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  display: none;
+  font-size: 24px;
+  transition: opacity 0.5s;
+  height: 5rem;
+  width: 5rem;
+}
+
+/* Show the arrow when user scrolls */
+.top-arrow.show {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px black;
+  background: rgb(3, 3, 3);
+}
+
+.top-arrow svg {
+  width: 30%;
+  fill: var(--color-body);
+}
+
+.top-arrow:hover svg {
+  width: 35%;
+  transition: 0.2s;
+  fill: var(--color-headings);
+}

@@ -574,14 +574,14 @@ header {
 
   .service__header {
     text-align: center;
-    width: 50%;
+    width: 80%;
   }
 }
 
 /* About Me */
 
 .about {
-  padding: 6rem 0 4rem 0;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -698,9 +698,8 @@ header {
 }
 
 .footer__icons svg {
-  fill: var(--color-body);
-  height: 3rem;
-  width: 3rem;
+  height: 2.8rem;
+  width: 2.8rem;
 }
 
 .footer__icons svg:hover {
@@ -730,7 +729,12 @@ header {
   }
 
   .footer__icons {
-    width: 50%;
+    width: 40%;
+  }
+
+  .footer__icons svg {
+    width: 2rem;
+    height: 2rem;
   }
 }
 

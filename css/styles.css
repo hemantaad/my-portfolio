@@ -104,7 +104,7 @@ h6 {
   margin: 1rem 0 0 0;
 }
 
-.hero__content button {
+.hero__content a {
   background: var(--color-primary);
   border: 1px solid #c5b3b3;
   color: var(--color-headings);
@@ -114,10 +114,11 @@ h6 {
   padding: 0.6rem 4rem;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   margin: 3rem 0 0 0;
 }
 
-.hero__content button:hover {
+.hero__content a:hover {
   color: var(--color-primary);
   background: var(--color-headings);
   border: 1px solid var(--color-headings);
@@ -482,7 +483,7 @@ header {
 /* Service */
 
 .service {
-  padding: 6rem 0 4rem 0;
+  padding: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -559,11 +560,21 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  .service__header {
+    text-align: center;
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .service__content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service__header {
+    text-align: center;
+    width: 50%;
   }
 }
 
@@ -588,7 +599,7 @@ header {
 }
 
 .about__body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -662,5 +673,69 @@ header {
 
   .about__media {
     margin-bottom: 5rem;
+  }
+}
+
+/* Footer */
+
+.footer {
+  color: var(--color-body);
+  font-size: 1.3rem;
+  letter-spacing: 1.5;
+  font-family: "Roboto Flex";
+  padding: 6rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__icons {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__icons svg {
+  fill: var(--color-body);
+  height: 3rem;
+  width: 3rem;
+}
+
+.footer__icons svg:hover {
+  fill: var(--color-headings);
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.footer__content {
+  margin-top: 3rem;
+  width: 50%;
+  text-align: center;
+}
+
+.footer h2 {
+  margin-top: 3rem;
+  font-family: "Bebas Neue";
+  font-size: 3rem;
+  color: var(--color-headings);
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__content {
+    width: 80%;
+  }
+
+  .footer__icons {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .footer__icons {
+    width: 30%;
   }
 }

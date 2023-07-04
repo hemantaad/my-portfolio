@@ -487,7 +487,6 @@ header {
   flex-direction: column;
   align-items: center;
   background: var(--color-primary);
-  max-width: 1140px;
   color: var(--color-body);
   font-family: "Roboto Flex";
 }
@@ -565,5 +564,103 @@ header {
 @media screen and (max-width: 768px) {
   .service__content {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* About Me */
+
+.about {
+  padding: 6rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-primary);
+  color: var(--color-body);
+  font-family: "Roboto Flex";
+}
+
+.about__header h2 {
+  font-family: "Bebas Neue";
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 6rem;
+  color: var(--color-headings);
+}
+
+.about__body {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__media {
+  /* order: 2; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image__frame {
+  width: 50%;
+  border: 5px solid var(--color-headings);
+}
+
+.about__media .image__frame img {
+  box-shadow: 8px 8px 10px black;
+  image-orientation: flip;
+  translate: -2.3rem -1.7rem;
+  width: 100%;
+}
+
+.about__content {
+  color: #eddede;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about__content p:first-child {
+  margin-bottom: 1rem;
+}
+
+.personal_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 4rem;
+  justify-items: start;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.info__content h3 {
+  font-size: 1.5rem;
+  color: var(--color-headings);
+  font-weight: normal;
+}
+
+.educational_info {
+  margin-top: 3.5rem;
+  align-self: flex-start;
+}
+
+.educational_info p:first-child {
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .image__frame {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__body {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about__media {
+    margin-bottom: 5rem;
   }
 }

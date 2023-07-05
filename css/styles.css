@@ -181,7 +181,7 @@ h6 {
   border-radius: 100%;
   background: var(--color-secondary);
   box-shadow: 8px 8px 10px black;
-  z-index: 1000;
+  z-index: 500;
   position: absolute;
 }
 
@@ -278,7 +278,7 @@ h6 {
     margin-top: 1rem;
   }
 
-  .hero__content button {
+  .hero__content a {
     margin-top: 4rem;
   }
 
@@ -744,6 +744,206 @@ header {
   }
 }
 
+/* Contact Us */
+
+.contact {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__header h2 {
+  font-family: "Bebas Neue";
+  font-size: 4rem;
+  font-weight: normal;
+  margin-bottom: 6rem;
+  color: var(--color-headings);
+}
+
+.contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  width: 60%;
+  background: var(--color-secondary);
+  height: 50rem;
+  box-shadow: 8px 8px 8px black;
+}
+
+.form__content {
+  position: absolute;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.form__content h2 {
+  font-family: "Bebas Neue";
+  font-size: 3rem;
+  font-weight: normal;
+  color: #eddede;
+}
+
+.form__content p {
+  font-family: "Roboto Flex";
+  font-weight: normal;
+  color: #eddede;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 1.5rem;
+  background: #f5f1f1;
+}
+
+input::placeholder {
+  font-family: "Roboto Flex";
+}
+
+input[type="textarea"] {
+  height: 100px;
+}
+
+.form__content button {
+  background: transparent;
+  border: 1px solid #c5b3b3;
+  color: var(--color-headings);
+  font-size: 2rem;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  outline: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  width: 35%;
+  padding: 0.5rem 0;
+}
+
+.form__content button:hover {
+  color: var(--color-primary);
+  background: var(--color-headings);
+  border: 1px solid var(--color-headings);
+  transition: 0.5s;
+}
+
+.contact__info {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto Flex";
+  font-size: 1.2rem;
+  color: var(--color-body);
+  background: var(--color-secondary);
+  position: absolute;
+  width: 45%;
+  left: -20%;
+  box-shadow: 8px 8px 8px black;
+  overflow: hidden;
+}
+
+.contact__info-header {
+  font-family: "Bebas Neue";
+  font-size: 3rem;
+  font-weight: normal;
+  color: #eddede;
+  margin-bottom: 3rem;
+}
+
+.contact__info-body {
+  font-size: 1.2rem;
+  color: #eddede;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact__info-body svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .contact__form {
+    width: 75%;
+  }
+
+  .contact__info {
+    width: 55%;
+  }
+
+  .form__content {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__form {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .contact__info {
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: none;
+    position: static;
+    width: 90%;
+  }
+
+  .contact__info-body {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .contact__info-header {
+    margin-top: 2rem;
+    justify-self: center;
+    grid-column: 1/3;
+    margin-bottom: 0;
+  }
+
+  .form__content {
+    margin: 2rem 0;
+    text-align: center;
+    position: static;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact__info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    justify-content: center;
+    position: static;
+    width: 75%;
+  }
+
+  .contact__info-header {
+    align-self: center;
+    margin-top: 2rem;
+  }
+}
+
 /* Top Arrow */
 
 .top-arrow {
@@ -757,7 +957,6 @@ header {
   width: 5rem;
 }
 
-/* Show the arrow when user scrolls */
 .top-arrow.show {
   opacity: 1;
   display: flex;
@@ -765,6 +964,7 @@ header {
   align-items: center;
   box-shadow: 0 0 8px black;
   background: rgb(3, 3, 3);
+  z-index: 1000;
 }
 
 .top-arrow svg {

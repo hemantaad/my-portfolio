@@ -891,6 +891,10 @@ input[type="textarea"] {
 }
 
 @media screen and (max-width: 768px) {
+  .contact {
+    padding: 0;
+  }
+
   .contact__form {
     flex-direction: column;
     width: 100%;
@@ -928,6 +932,10 @@ input[type="textarea"] {
 }
 
 @media screen and (max-width: 480px) {
+  .contact {
+    padding: 0;
+  }
+
   .contact__info {
     padding: 0;
     display: flex;

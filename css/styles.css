@@ -3,6 +3,7 @@
   --color-secondary: #414040;
   --color-headings: #ffd700;
   --color-body: #ffffff;
+  --swiper-theme-color: #ffd700 !important;
 }
 
 *,
@@ -1107,17 +1108,22 @@ input[type="textarea"] {
 }
 
 @media screen and (max-width: 768px) {
+  .project__container {
+    display: none;
+  }
+
   .project__body {
-    grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
 
   .project__block {
-    width: 30%;
+    box-shadow: none;
+    object-fit: cover;
   }
 
-  .swiper-slide {
+  .overlay .text {
     text-align: start;
+    padding: 0 5rem;
   }
 }
 
@@ -1259,7 +1265,7 @@ input[type="textarea"] {
 .experience__circle {
   margin-top: 14px;
   width: 1.6rem;
-  height: 1.6rem;
+  aspect-ratio: 1/1.35;
   border-radius: 50%;
   background: var(--color-headings);
   box-shadow: 0 0 15px var(--color-headings);
@@ -1297,6 +1303,9 @@ input[type="textarea"] {
   }
   .proficiency__header {
     text-align: center;
+  }
+  .proficiency h2 {
+    margin-bottom: 2rem;
   }
 }
 

@@ -59,6 +59,12 @@ h6 {
   background: var(--color-primary);
 }
 
+@media screen and (max-width: 480px) {
+  .block {
+    padding: 0 2.5rem;
+  }
+}
+
 .container {
   margin: 0 auto;
   background: var(--color-primary);

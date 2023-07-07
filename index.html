@@ -550,9 +550,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="slider-button-next"></div>
+            <div class="slider-button-prev"></div>
+            <div class="slider-pagination"></div>
           </div>
         </div>
       </div>
@@ -660,6 +660,12 @@
           var projectContainer = document.querySelectorAll(
             ".project__container"
           );
+          var sliderButtonNext = document.querySelector('.slider-button-next');
+          sliderButtonNext.classList.add('swiper-button-next');
+          var sliderButtonPrev = document.querySelector('.slider-button-prev');
+          sliderButtonPrev.classList.add('swiper-button-prev');
+          var sliderPagination = document.querySelector('.slider-pagination');
+          sliderPagination.classList.add('swiper-pagination');
 
           projectBlocks.forEach(function (element) {
             element.classList.add("swiper-slide");

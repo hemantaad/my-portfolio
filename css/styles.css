@@ -1008,7 +1008,7 @@ input[type="textarea"] {
   overflow: hidden;
   width: 100%;
   opacity: 0;
-  transition: 0.4s ease;
+  transition: 0.3s;
 }
 
 .project__block:hover .overlay {
@@ -1174,7 +1174,7 @@ input[type="textarea"] {
   position: absolute;
   width: 24%;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background-color: var(--color-secondary);
+  background-color: #eddede;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1183,7 +1183,6 @@ input[type="textarea"] {
 
 .skills__container:hover svg {
   transition: 0.5s;
-  fill: #ffd700;
   width: 55%;
 }
 

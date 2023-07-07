@@ -220,7 +220,7 @@ h6 {
   width: 60%;
 }
 
-.icon-container svg:hover {
+.icon-container:hover svg {
   aspect-ratio: 1/1;
   fill: var(--color-headings);
   width: 70%;
@@ -1087,8 +1087,6 @@ input[type="textarea"] {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1174,11 +1172,16 @@ input[type="textarea"] {
   position: absolute;
   width: 24%;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background-color: #eddede;
+  background: #eddede;
   display: flex;
   justify-content: center;
   align-items: center;
   rotate: 90deg;
+}
+
+.skills__container:hover {
+  transition: 0.2s;
+  background: var(--color-primary);
 }
 
 .skills__container:hover svg {
